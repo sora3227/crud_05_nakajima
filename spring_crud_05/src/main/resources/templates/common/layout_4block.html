@@ -14,11 +14,13 @@
 	<header>
 		<div th:replace="~{common/header :: layout-header}"></div>
 	</header>
+	<!--contentで一行に-->
 	<div class="content">
 		<!--/* サイドバー */-->
 		<aside>
 			<div th:replace="~{common/sidebar :: layout-sidebar}"></div>
 		</aside>
+	
 		<!--/* メイン */-->
 		<article class="main">
 			<div th:replace="${body}"></div>
