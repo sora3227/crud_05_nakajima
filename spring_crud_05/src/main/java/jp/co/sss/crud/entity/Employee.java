@@ -12,6 +12,27 @@ import jakarta.persistence.Table;
 public class Employee {
 	@Id
 	private Integer empId;
+	
+	@Column
+	private String empPass;
+
+	@Column
+	private String empName;
+
+	@Column
+	private Integer gender;
+
+	@Column
+	private String address;
+
+	@Column
+	private Date birthday;
+
+	@Column
+	private Integer authority;
+
+	@Column
+	private Integer deptId;
 
 	public Integer getEmpId() {
 		return empId;
@@ -68,27 +89,6 @@ public class Employee {
 	public void setAuthority(Integer authority) {
 		this.authority = authority;
 	}
-
-	@Column
-	private String empPass;
-
-	@Column
-	private String empName;
-
-	@Column
-	private Integer gender;
-
-	@Column
-	private String address;
-
-	@Column
-	private Date birthday;
-
-	@Column
-	private Integer authority;
-
-	@Column
-	private Integer deptId;
 
 	public Integer getDeptId() {
 		return deptId;

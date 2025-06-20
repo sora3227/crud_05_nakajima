@@ -8,7 +8,11 @@ import org.springframework.stereotype.Repository;
 import jp.co.sss.crud.entity.Employee;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
-	Employee getReferenceByEmpId(Integer empId);
+	Employee findByEmpId(Integer empId);
 	List<Employee> findByEmpIdAndEmpPass(Integer empId, String password);
-
+	boolean existsByEmpPass(String empPass);
+	boolean existsByEmpId(Integer empId);
+	boolean existsByEmpIdAndEmpPass(Integer empId, String empPass);
+	Object findByEmpNameContaining(String empName);
+	
 }
