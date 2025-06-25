@@ -39,9 +39,10 @@ public class ListController {
 	@RequestMapping(path = "list/empName",method = RequestMethod.GET)
 	public String searchName(@RequestParam String empName, Model model) {
 		System.out.println("社員名");
-		List<Employee> employees = employeeRepository.findByEmpNameContaining("鈴木");
+		List<Employee> employees = employeeRepository.findByEmpNameContaining(empName);
 		session.invalidate();
 		model.addAttribute("employees",employees);
+		model.addAttribute("back_to_top_message", "該当する社員は存在しません。");
 		System.out.println(empName);
 
 		//model.addAttribute("employees", employeeRepository.findByEmpNameContaining(empName));

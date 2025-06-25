@@ -67,7 +67,7 @@ public class SearchEmpNameTest {
 
 	@Test
 	@Order(1)
-	public void 正常系_社員名検索操作_入力_郎() {
+	public void b() {
 
 		doLogin();
 

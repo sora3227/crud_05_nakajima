@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost:7779/spring_crud/delete/check?empId=4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/stylesheet.css" />
+<title>社員管理システム</title>
+</head>
+<body>
+	
+	<header>
+		
+	<div class="content">
+		<div class="title">社員管理システム</div>
+		<div class="user_info">
+			ようこそ、<a href="http://localhost:7779/spring_crud/update/input/?empId=2"><span>大谷二郎</span></a>さん<span class="pipeline">|</span><a href="http://localhost:7779/spring_crud/logout">ログアウト</a>
+		</div>
+	</div>
+
+	</header>
+	<div class="content">
+		
+		<aside class="admin_menu">
+	  <div class="title">社員名検索</div>
+	 
+	  <div class="form">
+	    <form action="http://localhost:7779/spring_crud/list/empName" method="get">
+	      <input type="text" name="empName">
+	      
+	      <input type="submit" value="検索">
+	    </form>
+	  
+	  </div>
+	  <div class="title">部署名検索</div>
+	  <div class="form">
+	    <form action="http://localhost:7779/spring_crud/list/deptId" method="get">
+
+	     <span>
+	      	<select name="deptId">
+	        	<option value="1" selected="">営業部</option>
+	        	<option value="2">経理部</option>
+	        	<option value="3">総務部</option>
+	      	</select>
+	     </span>
+
+	     
+
+	     <input type="submit" value="検索">
+	    </form>
+	  </div>
+	</aside>
+		
+		<article class="main">
+			
+		<h3>社員削除確認画面</h3>
+    <div class="update">
+      <div class="form">
+        <div class="label">パスワード：</div>
+        <div class="input">※非表示</div>
+      </div>
+      <div class="form">
+        <div class="label">社員名：</div>
+        <div class="input">山田洋子</div>
+      </div>
+      <div class="form">
+        <div class="label">性別：</div>
+        <div class="input">
+          
+          <span>女性</span>
+        </div>
+      </div>
+      <div class="form">
+        <div class="label">住所：</div>
+        <div class="input">埼玉県</div>
+      </div>
+      <div class="form">
+        <div class="label">生年月日：</div>
+        <!-- 日付出力フォーマットを設定 -->
+        <div class="input">1990/11/03</div>
+      </div>
+      <div class="form">
+        <div class="label">権限：</div>
+        <div class="input">
+          <span>一般</span>
+          
+        </div>
+      </div>
+      <div class="form">
+        <div class="label">部署名：</div>
+        <div class="input">総務部</div>
+      </div>
+      <form action="http://localhost:7779/spring_crud/delete/complete" method="post">
+        <div class="form">
+          <div class="label"></div>
+          <div class="input">
+            <input type="hidden" name="empId" value="4">
+            <input type="submit" value="削除">
+          </div>
+        </div>
+      </form>
+      <form action="http://localhost:7779/spring_crud/list">
+        <div class="form">
+          <div class="label"></div>
+          <div class="input">
+            <input type="submit" value="戻る">
+          </div>
+        </div>
+      </form>
+    </div>
+
+		</article>
+	</div>
+	
+	<footer>
+		<div class="footer ">
+	
+	Copyright(C) 2022 System Shared co., ltd, ALL Rights Reserved
+</div>
+	</footer>
+
+</body></html>

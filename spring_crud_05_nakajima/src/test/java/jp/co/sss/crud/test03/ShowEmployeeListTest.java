@@ -74,9 +74,10 @@ public class ShowEmployeeListTest {
 			e.printStackTrace();
 		}
 
+		//テーブル7に修正
 		WebElement empId = webDriver.findElement(By.cssSelector("table tr:nth-of-type(2) td:nth-of-type(1)"));
 		WebElement empName = webDriver.findElement(By.cssSelector("table tr:nth-of-type(2) td:nth-of-type(2)"));
-		WebElement departmentName = webDriver.findElement(By.cssSelector("table tr:nth-of-type(2) td:nth-of-type(3)"));
+		WebElement departmentName = webDriver.findElement(By.cssSelector("table tr:nth-of-type(2) td:nth-of-type(7)"));
 
 		// 検証
 		assertEquals("1", empId.getText());

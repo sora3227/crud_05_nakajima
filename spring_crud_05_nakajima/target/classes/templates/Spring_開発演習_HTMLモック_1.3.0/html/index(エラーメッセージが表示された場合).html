@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://localhost:7779/spring_crud/login -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+<title>社員管理システム</title>
+</head>
+<body>
+	
+	<header>
+		
+	<div class="content">
+		<div class="title">社員管理システム</div>
+		
+	</div>
+
+	</header>
+	
+	
+	<div class="content">
+		<article>
+			
+	
+	<div>
+		<h3>ログイン画面</h3>
+		<!-- エラーメッセージの出力(入力チェック) -->
+		<p>
+			<span> 
+				<span>パスワードを入力してください。</span><br>
+			</span><span> 
+				<span>社員IDを入力してください。</span><br>
+			</span>
+			<span></span>
+		</p>
+		<!-- エラーメッセージの出力(存在チェック) -->
+		<div class="login_form">
+			<form method="post" action="http://localhost:7779/spring_crud/login">
+				<div class="login_form">
+				<div class="login_label">社員ID</div>
+				<div class="login_input">
+					<input type="text" id="empId" name="empId" value="">
+				</div>
+				</div>
+				<div class="login_form">
+				<div class="login_label">パスワード</div>
+				<div class="login_input">
+					<input type="password" id="empPass" name="empPass" value="">
+				</div>
+				</div>
+				<div class="login_form">
+				<div class="login_label"></div>
+				<div class="login_input">
+					<input type="submit" value="ログイン">
+				</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+
+		</article>
+	</div>
+	
+	
+	
+	<footer>
+		<div class="footer ">
+	
+	Copyright(C) 2022 System Shared co., ltd, ALL Rights Reserved
+</div>
+	</footer>
+
+</body></html>
