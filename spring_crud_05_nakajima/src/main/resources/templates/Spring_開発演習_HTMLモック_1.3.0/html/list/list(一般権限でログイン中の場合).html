@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost:7779/spring_crud/list -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/stylesheet.css" />
+<title>社員管理システム</title>
+</head>
+<body>
+	
+	<header>
+		
+	<div class="content">
+		<div class="title">社員管理システム</div>
+		<div class="user_info">
+			ようこそ、<a href="http://localhost:7779/spring_crud/update/input/?empId=1"><span>鈴木太郎</span></a>さん<span class="pipeline">|</span><a href="http://localhost:7779/spring_crud/logout">ログアウト</a>
+		</div>
+	</div>
+
+	</header>
+	<div class="content">
+		
+		<aside class="search">
+	  <div class="title">社員名検索</div>
+	 
+	  <div class="form">
+	    <form action="http://localhost:7779/spring_crud/list/empName" method="get">
+	      <input type="text" name="empName">
+	      
+	      <input type="submit" value="検索">
+	    </form>
+	  
+	  </div>
+	  <div class="title">部署名検索</div>
+	  <div class="form">
+	    <form action="http://localhost:7779/spring_crud/list/deptId" method="get">
+
+	     <span>
+	      	<select name="deptId">
+	        	<option value="1" selected="">営業部</option>
+	        	<option value="2">経理部</option>
+	        	<option value="3">総務部</option>
+	      	</select>
+	     </span>
+
+	     
+
+	     <input type="submit" value="検索">
+	    </form>
+	  </div>
+	</aside>
+		
+		<article class="main">
+			
+	<h3>社員一覧画面</h3>
+	<!-- セッション中にユーザ情報が存在する場合のみ以下の処理を実行する。 -->
+    <!-- なお、セッション中のユーザ情報がない（null）の場合、-->
+    <!-- フィルターの処理により、当該Thymeleaf処理完了後にログイン画面にリダイレクトする。 -->
+		
+
+      	
+		<table class="list_table">
+			<tbody><tr>
+				<th class="empId">社員ID</th>
+				<th class="empName">社員名</th>
+				
+	            <th class="deptName">部署名</th>
+	            
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>鈴木太郎</td>
+				
+	            <td>営業部</td>
+	            
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>田中二郎</td>
+				
+	            <td>経理部</td>
+	            
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>渡辺花子</td>
+				
+	            <td>経理部</td>
+	            
+			</tr>
+		</tbody></table>
+
+		</article>
+	</div>
+	
+	<footer>
+		<div class="footer ">
+	
+	Copyright(C) 2022 System Shared co., ltd, ALL Rights Reserved
+</div>
+	</footer>
+
+</body></html>
