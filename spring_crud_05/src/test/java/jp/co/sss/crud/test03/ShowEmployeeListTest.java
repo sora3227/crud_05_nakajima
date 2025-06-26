@@ -38,6 +38,7 @@ public class ShowEmployeeListTest {
 		ChromeOptions ops = new ChromeOptions();
 		ops.addArguments("--remote-allow-origins=*");
 		webDriver = new ChromeDriver(ops);
+		
 	}
 
 	@AfterEach
